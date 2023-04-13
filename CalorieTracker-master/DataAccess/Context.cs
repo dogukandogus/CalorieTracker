@@ -20,7 +20,7 @@ namespace DataAccess
         public DbSet<UserType> UserType { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-EFOB25G;database=CalorieTrackerDB;trusted_connection=true;");
+            optionsBuilder.UseSqlServer("server=...;database=CalorieTrackerDB;trusted_connection=true;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
